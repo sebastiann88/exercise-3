@@ -105,5 +105,17 @@ header {
         min-height: 600px;  
         }
 } // @media
+
+@media only screen and (min-width: 60em) {
+    .toggle-btn,
+    .close-btn{
+        display: none;
+    }
+    .slide-menu {
+        position: static;
+        right: auto;
+    }
+}
+        
     
 
