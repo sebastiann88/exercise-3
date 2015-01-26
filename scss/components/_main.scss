@@ -32,4 +32,78 @@ header {
   position: relative;
 }
 
+.toogle {
+    position: absolute;
+    right: 1em;
+    top: 0;
+}
+
+.navigation ul {
+    @include zero;
+    li{
+        list-style-type: none;
+        a {
+            display: block;
+            padding: .5em 1em;
+            text-align: center;
+            border-bottom: 1px solid $light-grey;
+            text-decoration: none;
+        }
+        &:first-child a{
+            border-top: 1px solid $light-grey;
+        }
+    }
+}
+
+.toggle-btn,
+.close-btn{
+    color: $text-color;
+    height: 40px;
+    width: 40px;
+    span{
+     @include hide-text;   
+    }
+}
+
+// Sliding Navigation
+
+@media only screen and (max-width: 60em) {
+    //Page should move when nav opens
+    // only time we will never ue max-width
+    .site-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        z-index: 100;
+        .sliding-canvas {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform: translateX(0);
+            @include ease (all, 300ms, ease-in-out);
+        } // .sliding canvas
+        
+        
+        &[data-state="slide-open"] .sliding-canvas{
+            transform: translateX(-100%);
+        }
+        
+        &[data-state="slide-open"]{
+        overflow: visible; // Allows nav to be greater than page height when open.
+    
+        }
+    } // .site wrapper
+        
+    // Navigation Styles
+    .slide-menu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        bottom: 0;
+        right: -100%;
+        min-height: 600px;  
+        }
+} // @media
+    
 
