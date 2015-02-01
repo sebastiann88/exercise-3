@@ -28,8 +28,18 @@ body{
 }
 
 header {
-  padding: 0 1em;
+  padding: 0em;
   position: relative;
+}
+
+h1 {
+    color: $light-green;
+    background-color: $dark-blue;
+    padding: 0.5em;
+}
+
+.hamburger {
+    padding: 1em;
 }
 
 .toogle {
@@ -61,7 +71,7 @@ header {
     height: 40px;
     width: 40px;
     span{
-     @include hide-text;   
+     @include hide-text;
     }
 }
 
@@ -102,7 +112,7 @@ header {
         top:0;
         bottom: 0;
         right: -100%;
-        min-height: 600px;  
+        min-height: 600px;
         }
 } // @media
 

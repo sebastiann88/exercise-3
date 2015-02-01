@@ -99,39 +99,49 @@ body {
 
 /* line 30, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
 header {
-  padding: 0 1em;
+  padding: 0em;
   position: relative; }
 
 /* line 35, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+h1 {
+  color: #aff362;
+  background-color: #394145;
+  padding: 0.5em; }
+
+/* line 41, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+.hamburger {
+  padding: 1em; }
+
+/* line 45, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
 .toogle {
   position: absolute;
   right: 1em;
   top: 0; }
 
-/* line 41, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+/* line 51, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
 .navigation ul {
   margin: 0;
   padding: 0; }
-  /* line 43, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+  /* line 53, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
   .navigation ul li {
     list-style-type: none; }
-    /* line 45, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+    /* line 55, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
     .navigation ul li a {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #c9c9c9;
       text-decoration: none; }
-    /* line 52, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+    /* line 62, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
     .navigation ul li:first-child a {
-      border-top: 1px solid #ccc; }
+      border-top: 1px solid #c9c9c9; }
 
-/* line 59, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+/* line 69, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
   color: #222;
   height: 40px;
   width: 40px; }
-  /* line 63, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+  /* line 73, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
@@ -139,13 +149,13 @@ header {
     display: block; }
 
 @media only screen and (max-width: 60em) {
-  /* line 73, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+  /* line 83, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 78, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+    /* line 88, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -154,16 +164,16 @@ header {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 87, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+    /* line 97, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 91, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+    /* line 101, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 98, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+  /* line 108, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -175,11 +185,11 @@ header {
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 111, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+  /* line 121, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 114, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
+  /* line 124, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
   .slide-menu {
     position: static;
     right: auto; }
