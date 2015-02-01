@@ -21,6 +21,8 @@ html {
 body{
   font-family: sans-serif;
   @include zero;
+    padding: 0em;
+    margin: 0em;
   // Hides close button if there is no js
   &.noscript .close-btn{
     display: none;
@@ -36,6 +38,7 @@ h1 {
     color: $light-green;
     background-color: $dark-blue;
     padding: 0.5em;
+    margin: 0em 0em 1em 0em;
 }
 
 .hamburger {
