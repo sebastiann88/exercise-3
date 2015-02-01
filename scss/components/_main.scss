@@ -45,6 +45,15 @@ h1 {
     padding: 1em;
 }
 
+a {
+    color: $dark-blue;
+    font-size: 1.2em;
+}
+
+li {
+    background-color: $light-blue;  
+}
+
 .toogle {
     position: absolute;
     right: 1em;
@@ -70,9 +79,11 @@ h1 {
 
 .toggle-btn,
 .close-btn{
-    color: $text-color;
-    height: 40px;
-    width: 40px;
+    color: $dark-blue;
+    height: 80px;
+    width: 80px;
+    padding: 0.5em;
+    margin: 0.5em;
     span{
      @include hide-text;
     }
