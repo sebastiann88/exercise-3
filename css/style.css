@@ -180,11 +180,11 @@ li {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
-      border-bottom: 1px solid #c9c9c9;
+      border-bottom: 1px solid #394145;
       text-decoration: none; }
     /* line 112, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
     .navigation ul li:first-child a {
-      border-top: 1px solid #c9c9c9; }
+      border-top: 1px solid #394145; }
 
 /* line 119, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
@@ -245,4 +245,36 @@ li {
   .slide-menu {
     position: static;
     right: auto; }
+ }
+
+/* line 1, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/grid */
+.grid {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap; }
+
+/* line 12, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/grid */
+.unit {
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+  display: inline-block;
+  visibility: visible; }
+
+/* line 21, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/grid */
+.unit-s-1 {
+  display: block;
+  visibility: visible;
+  width: 100%; }
+
+@media only screen and (min-width: 50em) {
+  /* line 29, /Users/SebastianNadeau/Desktop/exercise-3/scss/components/grid */
+  .unit-l-1-2 {
+    width: 45%; }
  }
