@@ -4,6 +4,8 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+
+
 html {
 	box-sizing: border-box;
 	-moz-text-size-adjust: 100%;
@@ -47,6 +49,20 @@ h2 {
     margin: 0em;
 }
 
+h5 {
+    color: $dark-blue;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1.3em;
+    padding: 0.5em 0em 0em 0.6em;
+    margin: auto 50%;
+    color: $light-green;
+}
+
+footer {
+    background-color: $dark-blue;
+}
+
 .hamburger {
     padding: 1em;
 }
@@ -54,21 +70,6 @@ h2 {
 p {
     padding: 1em;
     margin: 0em;
-}
-
-.primary-btn {
-    @include button($primary, #fff, $light-blue);
-}
-
-.secondary-btn {
-    @include button($secondary, #000, $dark-blue);
-}
-
-.border {
-    border: 1px solid $secondary-dark;
-    p {
-        color: green;
-    }
 }
 
 a {
