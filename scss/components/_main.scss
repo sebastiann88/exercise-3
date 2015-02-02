@@ -65,6 +65,14 @@ header {
     background-color: $dark-blue;
 }
 
+.primary-btn {
+    @include button($dark-blue, $light-blue);
+}
+
+.secondary-btn {
+    @include button($dark-blue, $light-gray);
+}
+
 footer {
     background-color: $dark-blue;
 }
