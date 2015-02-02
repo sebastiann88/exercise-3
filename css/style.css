@@ -195,68 +195,74 @@ div {
   padding: 0em; }
 
 /* line 121, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+.img-flex {
+  width: 100%; }
+
+/* line 125, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .media-img {
   float: left;
   margin: 0em;
   padding: 0em; }
 
-/* line 127, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 131, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .media-body {
   overflow: hidden;
   margin: 0em;
   padding: 0em; }
 
-/* line 133, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 137, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .media-img-reversed {
   float: right;
   margin: 0 0 0 10px; }
 
-/* line 138, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 142, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .media-img-stacked {
   float: none;
   margin: 0; }
 
-/* line 143, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 147, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .media-body {
   overflow: hidden; }
 
-/* line 147, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 151, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .toogle {
   position: absolute;
   right: 1em;
   top: 0; }
 
-/* line 153, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 157, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 nav {
   float: right;
   margin-top: -3.5em; }
 
-/* line 158, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 162, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .navigation ul {
   margin: 0;
   padding: 0; }
-  /* line 160, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+  /* line 164, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
   .navigation ul li {
-    list-style-type: none; }
-    /* line 162, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em; }
+    /* line 168, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
     .navigation ul li a {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
       border-bottom: 1px solid #394145;
       text-decoration: none; }
-    /* line 169, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+    /* line 175, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
     .navigation ul li:first-child a {
       border-top: 1px solid #394145; }
 
-/* line 176, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+/* line 182, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
   color: #394145;
   height: 80px;
   width: 80px;
   padding: 0.5em;
   margin: 0.5em; }
-  /* line 182, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+  /* line 188, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
@@ -264,13 +270,13 @@ nav {
     display: block; }
 
 @media only screen and (max-width: 60em) {
-  /* line 192, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+  /* line 198, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 197, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+    /* line 203, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -279,16 +285,16 @@ nav {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 206, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+    /* line 212, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 210, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+    /* line 216, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 217, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+  /* line 223, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -300,11 +306,11 @@ nav {
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 230, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+  /* line 236, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 233, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
+  /* line 239, /Users/Sebastian/Desktop/exercise-3/scss/components/main */
   .slide-menu {
     position: static;
     right: auto; }
