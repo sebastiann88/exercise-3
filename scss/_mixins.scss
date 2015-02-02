@@ -27,15 +27,15 @@
   overflow: visible;
 }
 
-@mixin button($dark-blue, $light-gray, $light-blue){
-    background-color: $dark-blue;
+@mixin button{
+    background-color: $light-green;
     border-radius: 3px;
     padding: .5em 1em;
     margin: 1em;
     display: inline-block;
     text-decoration: none;
-    color: $light-blue;
+    color: $dark-blue;
     &:hover{
-        background-color: $light-gray;   
+        background-color: $light-blue;
     }
 }

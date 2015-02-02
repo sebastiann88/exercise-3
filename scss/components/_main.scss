@@ -36,6 +36,9 @@ header {
     margin: 0em;
     position: relative;
     background-color: $dark-blue;
+    a{
+      @include button;
+    }
 }
 
 h1 {
@@ -60,18 +63,7 @@ h5 {
     color: $light-green;
 }
 
-header {
-    margin: 2em;
-    background-color: $dark-blue;
-}
 
-.primary-btn {
-    @include button($dark-blue, $light-blue);
-}
-
-.secondary-btn {
-    @include button($dark-blue, $light-gray);
-}
 
 footer {
     background-color: $dark-blue;
@@ -92,7 +84,6 @@ a {
 }
 
 li {
-    background-color: $light-blue;
     float: right;
 }
 
@@ -143,7 +134,7 @@ div {
 
 nav {
     float: right;
-    margin-top: -2em;
+    margin-top: -3.5em;
 }
 
 .navigation ul {
