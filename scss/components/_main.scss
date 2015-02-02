@@ -41,8 +41,19 @@ h1 {
     margin: 0em 0em 1em 0em;
 }
 
+h2 {
+    color: $dark-blue;
+    padding: 0.5em 0em 0em 0.6em;
+    margin: 0em;
+}
+
 .hamburger {
     padding: 1em;
+}
+
+p {
+    padding: 1em;
+    margin: 0em;
 }
 
 a {
